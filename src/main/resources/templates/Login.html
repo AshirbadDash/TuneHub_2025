@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>TuneHub Login</title>
+    <link href="../static/login.css" rel="stylesheet">
+    <link href="../static/commonStyles.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/login.css}"/>
+    <link rel="stylesheet" th:href="@{/commonStyles.css}"/>
+    <script th:src="@{/common.js}"></script>
+
+    <link rel="icon" th:href="@{/music.png}" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+    <div class="nav__container">
+
+
+        <nav>
+            <ul class="nav__links">
+                <li class="logo"><a aria-label="Homepage" href="/">TuneHub</a></li>
+
+                <li><a href="home">Home</a></li>
+                <li><a href="registration">Signup</a></li>
+                <li><a href="pay">Subscribe</a></li>
+                <!--<li><button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+  &lt;!&ndash;  <span class="material-symbols-outlined" id="theme-icon">light_mode</span>&ndash;&gt;
+</button></li>-->
+
+            </ul>
+
+
+        </nav>
+
+    </div>
+</header>
+<main>
+    <div class="form__heading">
+        <h2>Welcome back</h2>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form__container">
+        <form action="validate" id="login__form" method="post" novalidate>
+            <div class="input__container">
+                <!-- <label for="email">Email</label> -->
+                <div class="form__group">
+                    <input autocomplete="off" id="email" name="email" placeholder="" required
+                           type="email"  maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address.">
+                    <h2 class="form__label-h2">Email</h2>
+                </div>
+
+                <!-- <label for="password">Password</label> -->
+                <div class="form__group">
+                    <input id="password" name="password" placeholder="" required type="password" minlength="8" maxlength="14"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,14}$" title="Password must be 8-14 characters long and contain at least one letter and one number.">
+                    <h2 class="form__label-h2">Password</h2>
+                </div>
+
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <div class="text__login">
+        <p class="botton__para">
+            Dont have an account?
+        </p>
+
+        <p><a href="registration">Sign Up</a></p>
+    </div>
+
+</main>
+
+
+<footer>
+    <div class="footer__container">
+
+        <ul class="footer__links">
+            <li class="logo">&copy; 2025 TuneHub Music Streaming App. All rights reserved.</li>
+            <div class="footer__logo">
+                <li><a href="https://github.com/ashirbaddash" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/ashirbaddash" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://x.com/ASHIRBAD__DASH" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+            </div>
+        </ul>
+    </div>
+
+
+</footer>
+
+</body>
+
+</html>

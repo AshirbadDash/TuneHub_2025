@@ -1,0 +1,245 @@
+    <!DOCTYPE html>
+<html data-theme="cupcake" lang="en" xmlns:th="https://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TuneHub</title>
+
+    <link rel="stylesheet" th:href="@{/index.css}"/>
+    <link rel="stylesheet" th:href="@{/commonStyles.css}"/>
+    <link href="../static/index.css" rel="stylesheet">
+    <link href="../static/commonStyles.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="icon" style="width:100px;" th:href="@{/music.png}" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <!-- <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap"/> -->
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="nav__container">
+
+        <nav>
+
+
+            <ul class="nav__links">
+                <li class="logo"><a aria-label="Homepage" href="/">TuneHub</a></li>
+
+                <li><a href="pay">Premium</a></li>
+
+                <li><a href="login">Login</a></li>
+                <li><a href="registration">SignUp</a></li>
+
+
+            </ul>
+
+
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="content__container">
+
+        <h2>All your Music Anytime Anywhere</h2>
+
+    </div>
+
+<div class="gallary-container">
+       
+    <article class="gallery">
+     <img src="https://assets.codepen.io/1506195/unsplash-music-0.avif" alt="guitar player at concert" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-1.avif" alt="duo singing" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-3.avif" alt="singer performing" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-4.avif" alt="singer fistbumping crowd" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-6.avif" alt="crowd looking at a lighted stage" />
+     <img src="https://assets.codepen.io/1506195/unsplash-music-7.avif" alt="woman singing on stage" />
+    </article>
+    </div>
+
+    
+<div class="phone-container">
+    
+    <div class="phone">
+        <header class="header">
+            <div class="header-logo">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-title">
+                Home
+            </div>
+            <div class="header-buttons">
+                <button class="notifications">
+                    <i class="ai-bell"></i>
+                </button>
+                <button class="avatar">
+                    <img src="https://assets.codepen.io/285131/pexels-photo-838875.jpeg" />
+                </button>
+            </div>
+        </header>
+        <section class="title">
+            <h1>Listening Everyday</h1>
+            <p>Explore millions of music according to your taste</p>
+        </section>
+        <section class="search">
+            <div class="search-inner">
+                <button class="search-button">
+                    <i class="ai-search"></i>
+                </button>
+                <input type="text" class="search-input" placeholder="Search Music" />
+    
+            </div>
+        </section>
+    
+        <nav class="navigation">
+            <a href="#" class="navigation-item active">Overview</a>
+            <a href="#" class="navigation-item">Songs</a>
+            <a href="#" class="navigation-item">Albums</a>
+            <a href="#" class="navigation-item">Artists</a>
+        </nav>
+        <section class="playlists">
+    
+            <article class="card">
+                <div class="card-inner">
+                    <span class="card-pin"></span>
+                    <div class="card-image">
+                        <img src="https://assets.codepen.io/285131/illustration-hand-with-cigarette-icon.jpg" />
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-meta-number">20 songs</span>
+                            <button class="card-meta-button">
+                                <i class="ai-circle-triangle-right-fill"></i>
+                            </button>
+                        </div>
+                        <h2 class="card-title">Alan Walker</h2>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="card">
+                <div class="card-inner">
+                    <span class="card-pin"></span>
+                    <div class="card-image">
+                        <img src="https://assets.codepen.io/285131/hand-drawn-monster-milkshake.jpg" />
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-meta-number">20 songs</span>
+                            <button class="card-meta-button">
+                                <i class="ai-circle-triangle-right-fill"></i>
+                            </button>
+                        </div>
+                        <h2 class="card-title">Tim Bergling</h2>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="currently-playing">
+    
+            <article class="card horizontal">
+                <div class="card-inner">
+                    <span class="card-pin simple"></span>
+                    <div class="card-image">
+                        <img src="https://assets.codepen.io/285131/pink-pastel-juicy-banana.jpg" />
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-meta-artist">Marshmello</span>
+                            <button class="card-meta-button" style="opacity: 0;">
+                                <i class="ai-circle-triangle-right-fill"></i>
+                            </button>
+                        </div>
+                        <h2 class="card-title">Hate the Other Side
+                            <span class="card-time">3:40</span>
+                        </h2>
+                    </div>
+                    <span class="card-pin simple"></span>
+                </div>
+            </article>
+        </section>
+        <footer class="menu">
+            <div class="menu-inner">
+                <a href="#" class="menu-item active">
+                    <i class="ai-home"></i>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="ai-heart"></i>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="ai-fire"></i>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="ai-gear"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+
+    <div class="gallary-container">
+    <article class="gallery2">
+        <img src="https://assets.codepen.io/1506195/unsplash-music-0.avif" alt="guitar player at concert" />
+        <blockquote class="quote spacer">
+            <span>Without music, life would be a mistake.</span>
+            <cite>&mdash;Friedrich Nietzsche</cite>
+        </blockquote>
+        <img src="https://assets.codepen.io/1506195/unsplash-music-1.avif" alt="duo singing" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-3.avif" alt="singer performing" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-4.avif" alt="singer fistbumping crowd" />
+        <div class="spacer"></div>
+        <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="crowd cheering" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-6.avif" alt="crowd in a concert" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-7.avif" alt="woman singing" />
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <img src="https://assets.codepen.io/1506195/unsplash-music-13.avif" alt="Person playing a cello" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-11.avif" alt="Kiss playing" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-9.avif" alt="young man singing" />
+        <div class="spacer"></div>
+        <img src="https://assets.codepen.io/1506195/unsplash-music-10.avif" alt="woman singing" />
+        <img src="https://assets.codepen.io/1506195/unsplash-music-12.avif" alt="man playing drums" />
+    </article>
+</div>
+
+
+  
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer__container">
+
+        <ul class="footer__links">
+            <li class="logo">&copy; 2025 TuneHub Music Streaming App. All rights reserved.</li>
+            <div class="footer__logo">
+<li><a href="https://github.com/ashirbaddash" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a></li>
+<li><a href="https://linkedin.com/ashirbaddash" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+<li><a href="https://x.com/ASHIRBAD__DASH" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+            </div>
+        </ul>
+    </div>
+
+
+</footer>
+
+
+</body>
+
+</html>
